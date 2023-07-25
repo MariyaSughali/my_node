@@ -13,7 +13,7 @@ pipeline{
     stages{
         stage('Clone repository') {
             steps{
-               git 'https://github.com/MariyaSughali/my_node.git'
+               git branch: 'main', url: 'https://github.com/MariyaSughali/my_node.git'
             }
     }
         
